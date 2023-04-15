@@ -69,8 +69,8 @@ body {
     grid-template-rows: repeat(7, auto);
     bottom: 13%;
     z-index: 1000;
-    /*visibility: hidden;*/
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
     transition: 1s ease all;
     transform: translateY(10px);
 }
@@ -408,7 +408,34 @@ body {
 
 <script>
 
+    const tooltip = document.querySelector('.tooltip');
+    const creador = document.querySelector('.creador');
 
+
+    let timer;
+    creador.addEventListener('mouseleave', () => {
+        timer = setTimeout(() => {
+            tooltip.style.opacity = `0`;
+            tooltip.style.visibility = `hidden`;
+            tooltip.style.transform = `translateY(10px)`;
+        }, 1000);
+    });
+
+    tooltip.addEventListener('mouseenter', () => clearTimeout(timer));
+
+    creador.addEventListener('mouseenter', () => {
+        tooltip.style.opacity = `1`;
+        tooltip.style.visibility = `visible`;
+        tooltip.style.transform = `translateY(0px)`;
+    });
+
+    tooltip.addEventListener('mouseenter', () => clearTimeout(timer));
+
+    tooltip.addEventListener('mouseleave', () => {
+        tooltip.style.opacity = `0`;
+        tooltip.style.visibility = `hidden`;
+        tooltip.style.transform = `translateY(10px)`;
+    });
 
 
 
