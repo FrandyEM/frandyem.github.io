@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+
     <!-- Estilso CSS de todo el documento  -->
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,300,400,500;600;700;800;900&family=Poppins&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Poppins&display=swap');
 
 * {
     margin: 0;
@@ -44,8 +45,16 @@ body {
 .creador {
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    position: relative;
+    margin-left: 90px;
+    position: absolute;
+    transition: 1s ease all;
+}
+
+.creador:hover {
+    background: #757575;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .logo-icono path {
@@ -54,7 +63,7 @@ body {
 
 .creador .nombre-creador {
     margin-left: 9px;
-    font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI";
+    font-family: 'Inter', sans-serif;
     font-weight: 800;
     /* letter-spacing: -0.05em; */
     font-size: 12px;
@@ -141,7 +150,7 @@ body {
     font-weight: 900;
     letter-spacing: -0.05em;
     font-size: 20px;
-    color: #061058;
+    color: #333544;
     /*Estilo para que funcione en Divi*/
     padding-bottom: 0px !important;
 }
@@ -156,7 +165,7 @@ body {
 .chaticono {
     width: 28px;
     height: 28px;
-    fill: #272932;
+    fill: #3D3F4E;
     padding: 0;
     margin-left: auto;
 }
@@ -179,7 +188,7 @@ body {
     font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI";
     font-weight: 900;
     font-size: 40px;
-    color: #272932;
+    color: #333544;
     max-width: 303px;
     margin-right: 0;
     letter-spacing: -0.05em;
@@ -192,7 +201,7 @@ body {
     font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI";
     font-weight: 500;
     font-size: 15px;
-    color: #7A8389;
+    color: #B2B8BA;
     line-height: 1.7em;
     max-width: 303px;
 }
@@ -213,13 +222,13 @@ body {
     font-weight: 800;
     font-size: 17px;
     letter-spacing: -0.05em;
-    color: #333333;
+    color: #3D3F4E;
 }
 
 .puntos {
     height: 8px;
     width: 8px;
-    background-color: #333333;
+    background-color: #BEC8D6;
     border-radius: 50%;
     margin-left: 10px;
     margin-top: 5px;
@@ -227,7 +236,7 @@ body {
 
 .linea {
     width: 80px;
-    border-bottom: 4px solid #333333;
+    border-bottom: 4px solid #BEC8D6;
     border-radius: 10px;
     margin-top: 7px;
     margin-left: 5px;
@@ -259,8 +268,6 @@ body {
     text-decoration: none;
 }
 
-/* No olvidar poner esto en hover en cuanto se termine  */
-/* Todas las prodiedades 3D  */
 .boton-gmail, .boton-whatsapp, .boton-telegram {
     /* Propiedades para el 3D */
     transform-style: preserve-3d;
@@ -346,10 +353,9 @@ body {
 .social-icons {
     width: 21px;
     height: 21px;
-    fill: #333333;
+    fill: #9BA6B6;
 } 
-
-    </style>
+</style>
 <!-- Fin de los estilos CSS  -->
 
     <div class="credit-contenedor">
